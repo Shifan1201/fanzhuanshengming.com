@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[翻转生命]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-container">
+            <div class="title-box">2026【翻转生命】夏令营</div>
+            <p>03/08/2026-08/08/2026</p>
+        </div>
+
+        <div class="tabs-wrapper">
+            <button class="tab-button active" onclick="openTab(event, 'lunes')">星期一</button>
+            <button class="tab-button" onclick="openTab(event, 'martes')">星期二</button>
+            <button class="tab-button" onclick="openTab(event, 'miercoles')">星期三</button>
+            <button class="tab-button" onclick="openTab(event, 'jueves')">星期四</button>
+            <button class="tab-button" onclick="openTab(event, 'viernes')">星期五</button>
+            <button class="tab-button" onclick="openTab(event, 'sabado')">星期六</button>
+         </div>
+
+        <div class="content-box">
+            <div id="lunes" class="tab-content active">
+                <h2>星期一</h2>
+                <div class="activity-item">
+                    <span class="activity-time">14:30-16:00</span>
+                    <span class="activity-title">开幕式+分组+破冰</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:00-16:30</span>
+                    <span class="activity-title">休息</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:30-18:00</span>
+                    <span class="activity-title">主题一</span>
+                    <p class="activity-desc">A:欢迎加入这场对话</p>
+                    <p class="activity-desc">B:圣经游戏</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:00-18:30</span>
+                    <span class="activity-title">自由活动</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:30-20:00</span>
+                    <span class="activity-title">电影会</span>
+                    <span class="activity-desc">【天路客】</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">20:00-21:00</span>
+                    <span class="activity-title">晚餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">21:00-24:00</span>
+                    <span class="activity-title">熄灯睡觉</span>
+                </div>
+            </div>
+
+            <div id="martes" class="tab-content">
+                <h2>星期二</h2>
+                <div class="activity-item">
+                    <span class="activity-time">8:00-8:30</span>
+                    <span class="activity-title">起床洗漱</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">08:30-9:00</span>
+                    <span class="activity-title">晨祷</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:00-9:30</span>
+                    <span class="activity-title">早餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:30-10:00</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">10:00-11:30</span>
+                    <span class="activity-title">主题二</span>
+                    <p class="activity-desc">A:耶稣是。。。？</p>
+                    <p class="activity-desc">B:天堂</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:30-11:45</span>
+                    <span class="activity-title">休息</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:45-13:30</span>
+                    <span class="activity-title">主题三</span>
+                    <p class="activity-desc">A:真爱长什么样子</p>
+                    <p class="activity-desc">B:罪</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">13:30-14:30</span>
+                    <span class="activity-title">午餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">14:30-16:00</span>
+                    <span class="activity-title">午休</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:00-16:30</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:30-18:00</span>
+                    <span class="activity-title">主题四</span>
+                    <p class="activity-desc">A:我为什么要和上帝建立关系？</p>
+                    <p class="activity-desc">B:神</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:00-19:00</span>
+                    <span class="activity-title">自由活动</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">19:00-20:00</span>
+                    <span class="activity-title">联合-音乐会</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">20:00-21:00</span>
+                    <span class="activity-title">晚餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">21:00-22:00</span>
+                    <span class="activity-title">小组练习-成果展</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">22:00-24:00</span>
+                    <span class="activity-title">熄灯睡觉</span>
+                </div>
+            </div>
+
+            <div id="miercoles" class="tab-content">
+                <h2>星期三</h2>
+                <div class="activity-item">
+                    <span class="activity-time">8:00-8:30</span>
+                    <span class="activity-title">起床洗漱</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">08:30-9:00</span>
+                    <span class="activity-title">晨祷</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:00-9:30</span>
+                    <span class="activity-title">早餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:30-10:00</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">10:00-11:30</span>
+                    <span class="activity-title">主题五</span>
+                    <p class="activity-desc">A:和上帝的关系是样貌？</p>
+                    <p class="activity-desc">B:耶稣</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:30-11:45</span>
+                    <span class="activity-title">休息</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:45-13:30</span>
+                    <span class="activity-title">联合活动</span>
+                    <p class="activity-desc">圣经Kahoot</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">13:30-14:30</span>
+                    <span class="activity-title">午餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">14:30-16:00</span>
+                    <span class="activity-title">午休</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:00-16:30</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:30-18:00</span>
+                    <span class="activity-title">主题六</span>
+                    <p class="activity-desc">A:圣灵是谁？</p>
+                    <p class="activity-desc">B:信心   </p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:00-19:00</span>
+                    <span class="activity-title">自由活动</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">19:00-20:00</span>
+                    <span class="activity-title">联合-座位谈会</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">20:00-21:00</span>
+                    <span class="activity-title">晚餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">21:00-22:00</span>
+                    <span class="activity-title">小组练习-成果展</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">22:00-24:00</span>
+                    <span class="activity-title">熄灯睡觉</span>
+                </div>
+            </div>
+
+            <div id="jueves" class="tab-content">
+                <h2>星期四</h2>
+                <div class="activity-item">
+                    <span class="activity-time">8:00-8:30</span>
+                    <span class="activity-title">起床洗漱</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">08:30-9:00</span>
+                    <span class="activity-title">晨祷</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:00-9:30</span>
+                    <span class="activity-title">早餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:30-10:00</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">10:00-11:30</span>
+                    <span class="activity-title">主题七</span>
+                    <p class="activity-desc">A:我如何可以被圣灵充满？</p>
+                    <p class="activity-desc">B:回应</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:30-11:45</span>
+                    <span class="activity-title">休息</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:45-13:30</span>
+                    <span class="activity-title">联合活动</span>
+                    <p class="activity-desc">摊位游戏</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">13:30-14:30</span>
+                    <span class="activity-title">午餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">14:30-16:00</span>
+                    <span class="activity-title">午休</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:00-16:30</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:30-18:00</span>
+                    <span class="activity-title">主题八</span>
+                    <p class="activity-desc">A:上帝如何帮助我们战胜邪恶？</p>
+                    <p class="activity-desc">B:在耶稣里成长</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:00-19:00</span>
+                    <span class="activity-title">清凉一夏</span>
+                    <p class="activity-desc">游泳</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">19:00-20:00</span>
+                    <span class="activity-title">联合-培灵会</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">20:00-21:00</span>
+                    <span class="activity-title">晚餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">21:00-22:00</span>
+                    <span class="activity-title">小组练习-成果展</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">22:00-24:00</span>
+                    <span class="activity-title">熄灯睡觉</span>
+                </div>
+            </div>
+
+            <div id="viernes" class="tab-content">
+                <h2>星期五</h2>
+                <div class="activity-item">
+                    <span class="activity-time">8:00-8:30</span>
+                    <span class="activity-title">起床洗漱</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">08:30-9:00</span>
+                    <span class="activity-title">晨祷</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:00-9:30</span>
+                    <span class="activity-title">早餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:30-10:00</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">10:00-11:30</span>
+                    <span class="activity-title">主题九</span>
+                    <p class="activity-desc">A:如今上帝还会医治吗？</p>
+                    <p class="activity-desc">B:制作福音工具</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:30-11:45</span>
+                    <span class="activity-title">休息</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">11:45-13:30</span>
+                    <span class="activity-title">联合活动</span>
+                    <p class="activity-desc">团队挑战赛</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">13:30-14:30</span>
+                    <span class="activity-title">午餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">14:30-16:00</span>
+                    <span class="activity-title">午休</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:00-16:30</span>
+                    <span class="activity-title">敬拜</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">16:30-18:00</span>
+                    <span class="activity-title">主题十</span>
+                    <p class="activity-desc">A:然后呢？。。。</p>
+                    <p class="activity-desc">B:练习分享福音</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">18:00-19:00</span>
+                    <span class="activity-title">清凉一夏</span>
+                    <p class="activity-desc">游泳</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">19:00-20:00</span>
+                    <span class="activity-title">联合-成果展</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">20:00-21:00</span>
+                    <span class="activity-title">晚餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">21:00-22:00</span>
+                    <span class="activity-title">见证分享</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">22:00-24:00</span>
+                    <span class="activity-title">熄灯睡觉</span>
+                </div>
+            </div>
+
+            <div id="sabado" class="tab-content">
+                <h2>星期六</h2>
+                <div class="activity-item">
+                    <span class="activity-time">08:00-09:00</span>
+                    <span class="activity-title">起床洗漱</span>
+                    <span class="activity-desc">收拾行李</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:00-09:30</span>
+                    <span class="activity-title">早餐</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">09:30-10:15</span>
+                    <span class="activity-title">闭幕式</span>
+                </div>
+            </div>
+    </div>
+        <div class="bottom-grid">
+            <div class="info-card">
+                <span class="card-title">一组</span>
+                <ul class="card-list">
+                    <li>金迪娜</li>
+                    <li>潘宪约</li>
+                    <li>刘圣泽</li>
+                    <li>李雨佳</li>
+                    <li>金迦勒</li>
+                    <li>缪以诺</li>
+                    <li>朱枼凤</li>
+                    <li>吴雨萱</li>
+                    <li>王溢可</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">二组</span>
+                <ul class="card-list">
+                    <li>张翔仪</li>
+                    <li>陈嘉伟(Santiago)</li>
+                    <li>缪伟俊</li>
+                    <li>陈家美</li>
+                    <li>林金杰</li>
+                    <li>邵佳馨</li>
+                    <li>卢静洁</li>
+                    <li>何皓轩</li>
+                    <li>张语晨</li>
+                    <li>陈欣苒</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">三组</span>
+                <ul class="card-list">
+                    <li>项罗莎</li>
+                    <li>林棘</li>
+                    <li>张永发</li>
+                    <li>刘琪琪</li>
+                    <li>陈家辉</li>
+                    <li>黄倍如</li>
+                    <li>孙晨可</li>
+                    <li>吴思含</li>
+                    <li>项俊冉</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">四组</span>
+                <ul class="card-list">
+                    <li>潘浩</li>
+                    <li>马佳瑶</li>
+                    <li>周翃硕</li>
+                    <li>赵路瑶</li>
+                    <li>阮天翔</li>
+                    <li>黄以诺</li>
+                    <li>金子翰</li>
+                    <li>卢辰俊</li>
+                    <li>邱子璇</li>
+                    <li>叶羽萱</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">五组</span>
+                <ul class="card-list">
+                    <li>林恕</li>
+                    <li>何扬帆</li>
+                    <li>温豪</li>
+                    <li>黄子姗</li>
+                    <li>邵佳琳</li>
+                    <li>何秀婷</li>
+                    <li>魏加达</li>
+                    <li>林张子昂</li>
+                    <li>陈聪智</li>
+                    <li>缪佳慧</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">六组</span>
+                <ul class="card-list">
+                    <li>吴倩倩</li>
+                    <li>苏成</li>
+                    <li>刘可欣</li>
+                    <li>尤茜娅</li>
+                    <li>叶迦勒</li>
+                    <li>何嘉乐</li>
+                    <li>张心研</li>
+                    <li>厉圣启</li>
+                    <li>任梓烁</li>
+                    <li>何磊</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">七组</span>
+                <ul class="card-list">
+                    <li>金雅欣</li>
+                    <li>冯梓琤</li>
+                    <li>叶豪杰</li>
+                    <li>周佳欣</li>
+                    <li>刘智宇</li>
+                    <li>何俊磊</li>
+                    <li>陈嘉伟</li>
+                    <li>卢敬明</li>
+                    <li>阮天程</li>
+                    <li>吴瑾瑜</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">八组</span>
+                <ul class="card-list">
+                    <li>胡东</li>
+                    <li>张撒拉</li>
+                    <li>金慈欣</li>
+                    <li>项雷雷</li>
+                    <li>林哈列</li>
+                    <li>彭新唯一</li>
+                    <li>叶铭昊</li>
+                    <li>林恩夏</li>
+                    <li>林恒依</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">九组</span>
+                <ul class="card-list">
+                    <li>邱智蜜</li>
+                    <li>周家和</li>
+                    <li>缪雅诗</li>
+                    <li>陈家琪</li>
+                    <li>杨忠信</li>
+                    <li>苏欣</li>
+                    <li>邱甘露</li>
+                    <li>孙睿政</li>
+                    <li>叶羽畅</li>
+                    <li>林俊佑</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">十组</span>
+                <ul class="card-list">
+                    <li>冯诗诗</li>
+                    <li>廖嘉靖</li>
+                    <li>陈芷若</li>
+                    <li>周浩</li>
+                    <li>毛嘉慧</li>
+                    <li>金鑫泽</li>
+                    <li>吴莫</li>
+                    <li>任张辰晰</li>
+                    <li>周翊硕</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">十一组</span>
+                <ul class="card-list">
+                    <li>吴天赐</li>
+                    <li>刘致远</li>
+                    <li>王启航</li>
+                    <li>黄以琳</li>
+                    <li>金子轩</li>
+                    <li>吴俊皓</li>
+                    <li>周佳豪</li>
+                    <li>项瑶瑶</li>
+                    <li>陈瑾萱</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <span class="card-title">十二组</span>
+                <ul class="card-list">
+                    <li>项诗帆</li>
+                    <li>刘圣洁</li>
+                    <li>陈艾娜</li>
+                    <li>娄文伟</li>
+                    <li>陈欧雅</li>
+                    <li>林浩轩</li>
+                    <li>王雨泽</li>
+                    <li>缪雅馨</li>
+                    <li>陈智欣</li>
+                    <li>阮徐博浩</li>
+                </ul>
+            </div>
+        </div>
+
+    <script>
+        function openTab(evt, dayId) {
+            var tabContent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(dayId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
